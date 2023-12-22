@@ -1,44 +1,31 @@
 import React, { Fragment } from "react";
 
+const activities = [
+{text:'FrontEnd abilities'},
+{text:'JavaScript'},
+{text:'React - Vue.JS'},
+{text:'BackEnd'},
+{text:'Laravel - PHP'},
+{text:'CSS3 - HTML 5'},
+{text:'Database admin'},
+{text:'Responsive Design'},
+{text:'Animations'},
+{text:'Creativity'},
+];
+
 function Item() {
   const handleMouse = (event) => {
-    console.log(event.target);
-  };
+    event.target.classList.add("item-mouse-move");
+  }
   return (
     <Fragment>
-      <div className="item text-white uppercase" onMouseMove={handleMouse}>
-        <p className="item-text">FrontEnd Habilities</p>
-      </div>
-      <div className="item text-white uppercase" onMouseMove={handleMouse}>
-        <p className="item-text">JavaScript</p>
-      </div>
-      <div className="item text-white uppercase" onMouseMove={handleMouse}>
-        <p className="item-text"> React - VueJS </p>
-      </div>
-      <div className="item text-white uppercase" onMouseMove={handleMouse}>
-        <p className="item-text"> BackEnd</p>
-      </div>
-      <div className="item text-white uppercase" onMouseMove={handleMouse}>
-        <p className="item-text"> Laravel</p>
-      </div>
-      <div className="item text-white uppercase" onMouseMove={handleMouse}>
-        <p className="item-text">CSS - HTML 5 </p>
-      </div>
-      <div className="item text-white uppercase" onMouseMove={handleMouse}>
-        <p className="item-text">Responsive Design </p>
-      </div>
-      <div className="item text-white uppercase" onMouseMove={handleMouse}>
-        <p className="item-text"> Animations </p>
-      </div>
-      <div className="item text-white uppercase" onMouseMove={handleMouse}>
-        <p className="item-text"> Scrum </p>
-      </div>
-      <div className="item text-white uppercase" onMouseMove={handleMouse}>
-        <p className="item-text"> Creativity </p>
-      </div>
-      <div className="item text-white uppercase" onMouseMove={handleMouse}>
-        <p className="item-text"> Swiftie </p>
-      </div>
+      { activities && activities.map(function(activity){
+       return (
+        <div className="item text-white uppercase"  data-aos="fade-up" onMouseMove={handleMouse}>
+          <p className="item-text">{activity.text}</p>
+        </div>
+      )
+       })}
     </Fragment>
   );
 }

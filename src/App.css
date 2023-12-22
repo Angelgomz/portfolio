@@ -1,34 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
-body{
+ body{
      font-family: 'Noto Sans,Open Sans', sans-serif;
      background-color: rgb(17 17 17);
      cursor:none;
      overflow-y: scroll;
+     overflow-x: hidden;
 }
-section{
-    height:100vh;
+ .App-Link{
+     font-weight: 100;
+     font-size: 26px;
+     font-style: normal;
+}
+ .left-side{
+     width:50%;
+}
+ .right-side{
+     width:50%;
+}
+ section{
+     height:100vh;
 }
  .whitespace-nowrap {
      white-space: nowrap;
 }
+ .mt-40{
+     margin-top:10rem;
+}
  .ml-10 {
      margin-left: 2.5rem;
+}
+ .pt-1 {
+     margin-top:1rem;
 }
  .d-inline{
      display:inline-block;
 }
-.item > p{
-    background: linear-gradient(to right,rgb(255,255,255) 50%,rgb(37,37,37) 50%);
-    background-size: 200% 100%;
-    background-position-x: 100%;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    text-align: right;
-    line-height: 1.2;
-    font-weight: 790;
-    font-size: 5cqh;
-    margin: 0.5%;
+ .item > p{
+     background: linear-gradient(to right,rgb(255,255,255) 50%,rgb(37,37,37) 50%);
+     background-size: 200% 100%;
+     background-position-x: 100%;
+     color: transparent;
+     background-clip: text;
+     -webkit-background-clip: text;
+     text-align: right;
+     line-height: 1.2;
+     font-weight: 700;
+     font-size: 45px;
+     margin: 0.5%;
+}
+ .item-mouse-move{
+     background-position-x: 0% !important;
 }
  .uppercase{
      text-transform: uppercase;
@@ -39,37 +60,47 @@ section{
  .flex-column{
      flex-direction: column;
 }
-.align-items-center{
-    align-items: center;
+ .align-items-center{
+     align-items: center;
 }
  .align-items-end{
      align-items:end;
 }
-.justify-content-center{
-    justify-content: center;
+ .justify-content-center{
+     justify-content: center;
 }
  .justify-content-start{
      justify-content: start;
 }
-.justify-content-between{
-    justify-content: space-between;
+ .justify-content-between{
+     justify-content: space-between;
 }
  .text-white{
      opacity: 1;
      color: rgb(255 255 255);
 }
-.star{
-    width: 25px;
-    height: 25px;
-    position: relative;
-    top: 25%;
+ .vertical-text{
+     writing-mode: vertical-lr;
+     transform: rotate(180deg) !important;
+}
+ .star{
+     width: 25px;
+     height: 25px;
+     position: relative;
+     top: 25%;
+}
+ .icon-arrow{
+     width: 38px;
+     height: 30px;
+     margin: 0% 0% 12% 10%;
+     position:absolute;
 }
  .container-circle{
-    position: relative;
-    color: rgb(167, 114, 114);
-    height: 60px;
-    font-size: 17px;
-    left: 5%;
+     position: relative;
+     color: rgb(167, 114, 114);
+     height: 60px;
+     font-size: 17px;
+     left: 5%;
 }
  .circle{
      position: absolute;
@@ -112,18 +143,49 @@ section{
 }
  @keyframes rotation {
      0%{
-        transform:rotate(0)
+         transform:rotate(0) 
     }
-     to{
-        transform:rotate(360deg)
+     100%{
+         transform:rotate(360deg) 
+    }
+}
+ @keyframes rotation-scroll {
+     0%{
+         transform:rotate(380deg) 
+    }
+     15%{
+         transform:rotate(420deg) 
+    }
+     30%{
+         transform:rotate(460deg) 
+    }
+     45%{
+         transform:rotate(500deg) 
+    }
+     60%{
+         transform:rotate(540deg) 
+    }
+     75%{
+         transform:rotate(580deg) 
+    }
+     90%{
+         transform:rotate(620deg) 
+    }
+     100%{
+         transform:rotate(720deg) 
     }
 }
  .animate-spin{
      animation: rotation 3s linear infinite;
 }
+ .animate-scroll-down{
+     animation: rotation-scroll 3s linear infinite;
+}
+.sun-gif{
+    animation:rotation 3s linear infinite;
+}
  .about{
-     font-size:70px;
-     margin-top:1%;
+     font-size: 80px;
 }
  .about > div{
      line-height: 0px;
@@ -133,11 +195,11 @@ section{
      right: 5%;
 }
  .font-bold{
-     font-weight: 600;
+     font-weight: 700;
 }
  a {
      text-decoration: none;
-     color: black;
+     color: white;
 }
  .App-header {
      display: flex;
@@ -159,15 +221,62 @@ section{
      height:100vh;
      margin:1% 5% 5% 5%;
 }
+ .social-media{
+     font-size:30px;
+     font-weight: bolder;
+     color:white;
+}
+ .social-media-icon{
+     width:200px;
+     margin:3%;
+     border-bottom: 3px solid transparent;
+}
+ .social-media-icon:hover{
+     border-bottom: 3px solid white;
+}
+ .transitions-colors{
+     transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
+     transition-timing-function: cubic-bezier(.4,0,.2,1);
+     transition-duration: .15s;
+}
+ .btn-contact{
+     cursor: none;
+     transform: translate(0px, 0px);
+     opacity: 1;
+     text-transform: uppercase;
+     font-size: 60px;
+     text-align: center;
+     padding-top: 1.5rem;
+     padding-bottom: 1.5rem;
+     padding-left: 1rem;
+     padding-right: 1rem;
+     border-color: rgb(255 255 255);
+     border-width: 20px;
+     border-radius: 9999px;
+     display: block;
+     text-decoration: inherit;
+     border: solid;
+}
+ .btn-contact:hover{
+     border-color: black;
+     color:black;
+     background-color:white;
+}
+ .left-side{
+     width:100%;
+}
+ .right-side{
+     width:100%;
+}
 /* sm */
  @media (max-width: 640px) {
-    .about-bottom{
-        position: absolute;
-        bottom: 10%;
-        line-height: 0;
+     .about-bottom{
+         position: absolute;
+         bottom: 10%;
+         line-height: 0;
     }
-    .container-circle{
-        display:none;
+     .container-circle{
+         display:none;
     }
      .title{
          font-size:12px;
@@ -198,11 +307,14 @@ section{
          margin-top: 5%;
     }
      .font-bold{
-         font-weight: 500;
+         font-weight: 700;
     }
      a {
          text-decoration: none;
          color: black;
+    }
+     .vertical-text{
+         display:none;
     }
      .App{
          margin:1% 5% 5% 5%;
@@ -210,13 +322,20 @@ section{
 }
 /*'md': '768px', */
  @media (max-width: 768px) {
-    .about-bottom{
-        position: absolute;
-        bottom: 10%;
-        line-height: 0;
+     .btn-contact{
+         font-size:30px;
     }
-    .container-circle{
-        display:none;
+     .flex-column-mobile{
+         flex-direction: column;
+         margin-top:20%;
+    }
+     .about-bottom{
+         position: absolute;
+         bottom: 10%;
+         line-height: 0;
+    }
+     .container-circle{
+         display:none;
     }
      .App-header {
          display: flex;
@@ -253,7 +372,7 @@ section{
          margin-top: 40%;
     }
      .font-bold{
-         font-weight: 500;
+         font-weight: 700;
     }
      .App{
          margin:5% 5% 5% 5%;
@@ -274,3 +393,4 @@ section{
 /* 2xl */
  @media (max-width: 1536px) {
 }
+ 

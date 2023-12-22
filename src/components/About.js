@@ -1,4 +1,5 @@
 import React from "react";
+import Sun from './../assets/sun.svg';
 export default function About(props) {
   return (
     <section className="flex justify-content-start flex-column">
@@ -41,11 +42,9 @@ export default function About(props) {
           <div className="flex flex-column align-items-end">
                 <div>
                 <div className="flex">
-                  <div>
+                  <div className="flex"> 
                   <p className="text-white title uppercase">Open to Work</p>
-                  </div>
-                  <div>
-                  <img src="/icons/star.svg" alt="star" className="star animate-spin"/>
+                  <img src={Sun} alt="sun-gif" className="sun-gif"></img>
                   </div>
                 </div>
                 <p className="text-white subtitle">Based to Chile</p>

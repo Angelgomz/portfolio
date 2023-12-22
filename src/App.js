@@ -5,10 +5,11 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import {Item} from "./components/Item";
+import {Contact} from "./components/Contact";
 function App() {
 
   return (
-    <React.Fragment>
+    <>
       <DotRing/>
       <div className="container">
       <Navbar/>
@@ -16,8 +17,11 @@ function App() {
       <Skills>
       <Item/>
       </Skills> 
+      <Contact>
+        
+      </Contact>
       </div>
-      </React.Fragment>
+    </>
   );
 }
 
