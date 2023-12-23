@@ -20,14 +20,17 @@ function Contact() {
         </div>
         <div className="right-side" style={{padding:'10%'}}>
            <div class="social-media flex flex-column align-items-end justify-content-end">
-              <div className="flex pt-1 social-media-icon">
+              <div className="flex mt-1 social-media-icon">
                 <a href="https://www.linkedin.com/in/angel-g-7b9317143/" rel="noreferrer"  target="_blank">LinkedIn</a>
                 <img src={Arrow} alt="arrow" className="icon-arrow"></img>
               </div>  
-              <div className="flex pt-1 social-media-icon">
-              <a href="https://github.com/Angelgomz/"rel="noreferrer"  target="_blank">GitHub  </a>
-              <img src={Arrow} alt="arrow" className="icon-arrow"></img>
-                </div>
+              <div className="flex mt-1 social-media-icon">
+               <a href="https://github.com/Angelgomz/"rel="noreferrer"  target="_blank">GitHub  </a>
+               <img src={Arrow} alt="arrow" className="icon-arrow"></img>
+              </div>
+              <div>
+                <a className="download-cv" href=''> Download CV </a>
+              </div>
            </div>
         </div>
     </div>

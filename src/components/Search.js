@@ -1,9 +1,18 @@
 import React from 'react'
-
-function Search() {
+function Search({
+  searchValue,
+  setSearchValue
+}) {
   return (
-    <div>Search</div>
+    <div>
+      <form id="search-form">
+        <label for="search">Search</label>
+        <input placeholder="" id="search" type="search" value={searchValue} pattern=".*\S.*" onChange={(event) => {
+          setSearchValue(event.target.value); }}></input>
+        <span class="caret"></span>
+      </form>
+    </div>
   )
 }
 
-export default Search
+export {Search}
