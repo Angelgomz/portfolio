@@ -22,14 +22,6 @@ hr {
 	font-style: normal;
 }
 
-.left-side {
-	width: 50%;
-}
-
-.right-side {
-	width: 50%;
-}
-
 section {
 	height: 100vh;
 }
@@ -346,11 +338,11 @@ a:active {
 }
 
 .left-side {
-	width: 100%;
+	width: 30%;
 }
 
 .right-side {
-	width: 100%;
+	width: 70%;
 }
 
 /* styles form form search */
@@ -522,79 +514,20 @@ label {
 	padding: 10px;
 	font-size: 15px;
 }
-
-/* sm */
-@media (max-width: 640px) {
-	.about-bottom {
-		position: absolute;
-		bottom: 10%;
-		line-height: 0;
-	}
-
-	.container-circle {
-		display: none;
-	}
-
-	.title {
-		font-size: 12px;
-	}
-
-	.star {
-		width: 30px;
-		height: 30px;
-	}
-
-	.whitespace-nowrap {
-		white-space: nowrap;
-	}
-
-	.ml-10 {
-		margin-left: 1rem;
-	}
-
-	.d-inline {
-		display: inline-block;
-	}
-
-	.uppercase {
-		text-transform: uppercase;
-	}
-
-	.text-white {
-		opacity: 1;
-		color: rgb(255 255 255);
-	}
-
-	.about {
-		line-height: 30px;
-		font-size: 22px;
-		margin-top: 5%;
-	}
-
-	.font-bold {
-		font-weight: 700;
-	}
-
-	a {
-		text-decoration: none;
-		color: black;
-	}
-
-	.vertical-text {
-		display: none;
-	}
-
-	.App {
-		margin: 1% 5% 5% 5%;
-	}
-}
-
 /*'md': '768px', */
 @media (max-width: 768px) {
+    .left-side {
+        width: 0%;
+    }
+    .right-side {
+        width: 100%;
+    }
 	.medium-mobile {
 		height: auto;
 	}
-
+    .item > p{
+        font-size:40px;
+    }
 	.list-text {
 		font-size: 20px;
 	}
@@ -701,6 +634,72 @@ label {
 	.caret {
 		right: 7%;
 		margin-top: 7%;
+	}
+}
+
+/* sm */
+@media (max-width: 640px) {
+	.about-bottom {
+		position: absolute;
+		bottom: 10%;
+		line-height: 0;
+	}
+
+	.container-circle {
+		display: none;
+	}
+
+	.title {
+		font-size: 12px;
+	}
+
+	.star {
+		width: 30px;
+		height: 30px;
+	}
+
+	.whitespace-nowrap {
+		white-space: nowrap;
+	}
+
+	.ml-10 {
+		margin-left: 1rem;
+	}
+
+	.d-inline {
+		display: inline-block;
+	}
+
+	.uppercase {
+		text-transform: uppercase;
+	}
+
+	.text-white {
+		opacity: 1;
+		color: rgb(255 255 255);
+	}
+
+	.about {
+		line-height: 30px;
+		font-size: 22px;
+		margin-top: 5%;
+	}
+
+	.font-bold {
+		font-weight: 700;
+	}
+
+	a {
+		text-decoration: none;
+		color: black;
+	}
+
+	.vertical-text {
+		display: none;
+	}
+
+	.App {
+		margin: 1% 5% 5% 5%;
 	}
 }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import Sun from './../assets/sun.svg';
+import Sun from './../../assets/sun.svg';
 function List({jobs,searchedJobs}) {
   const jobList = searchedJobs.length > 0  ? searchedJobs : jobs;
   return (

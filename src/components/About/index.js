@@ -1,6 +1,6 @@
 import React from "react";
-import Sun from './../assets/sun.svg';
-export default function About(props) {
+import Sun from './../../assets/sun.svg';
+function About(props) {
   return (
     <section className="flex justify-content-start flex-column">
     <div className="about"> 
@@ -54,3 +54,5 @@ export default function About(props) {
     </section>
   );
 }
+
+export {About}
