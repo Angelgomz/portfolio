@@ -7,7 +7,7 @@ function Skills({children }) {
   useEffect(() => {
     AOS.init();
   }, []);
-  return (
+  return ( 
     <section>
         <div className="flex justify-content-between">
           <div className="left-side">

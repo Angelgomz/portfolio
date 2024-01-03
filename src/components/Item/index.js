@@ -11,10 +11,10 @@ function Item() {
   const [activities, setActivities] = useState([]);
   useEffect(() => {
     setActivities([
-      { text: "FrontEnd abilities" },
-      { text: "JavaScript - React - Vue - JQuery", cheked: false },
       { text: "BackEnd Maintence", checked: false },
       { text: "Laravel - PHP", checked: false },
+      { text: "FrontEnd abilities" },
+      { text: "JavaScript - React - Vue - Angular- JQuery", cheked: false },
       { text: "CSS3 - HTML 5", checked: false },
       { text: "Build Apis - Integrations", checked: false },
       { text: "Database admin", checked: false },
@@ -27,18 +27,16 @@ function Item() {
   };
   return (
     <>
-      {activities.map(function (activity, i) {
+      {activities.map(function (activity,i) {
         return (
           <Fragment>
-            <div
-              key={activity.text}
+            <div key={i}
               className="item text-white uppercase"
               data-aos="fade-up"
               onMouseOut={() => checkedActivity(activity.text)}
               onMouseMove={handleMouse}
             >
-              {" "}
-              <p className="item-text">{activity.text}</p>{" "}
+               <p key ={activity.text} className="item-text">{activity.text}</p>
             </div>
           </Fragment>
         );

@@ -2,9 +2,9 @@ import React from "react";
 function Navbar() {
   return (
     <header className="App-header">
-    <a className="App-Link" href="https://reactjs.org" target="_blank" rel="noreferrer">
+    <p>
         Ángel Gómez
-    </a>
+    </p>
   </header>
   );
 }

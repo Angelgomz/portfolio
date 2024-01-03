@@ -10,6 +10,7 @@ import { Work } from "../Work"
 import { List } from "../List"
 import { Loader } from "../Loader"
 import "../App/index.css"
+
 function App() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
@@ -22,16 +23,17 @@ function App() {
       setError(true)
     }
   }, [])
+  
   return (
     <>
       {error && <p> Algo salió mal intenta de nuevo. </p>}
       {loading ? ( <Loader />) : (
         <div className="container">
           <DotRing/>
-          <Navbar />
-          <About />
+          <Navbar/>
+          <About/>
           <Skills>
-              <Item/>
+            <Item/>
           </Skills>
           <Work>
             <Search/>

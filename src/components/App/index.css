@@ -514,20 +514,25 @@ label {
 	padding: 10px;
 	font-size: 15px;
 }
+
 /*'md': '768px', */
 @media (max-width: 768px) {
-    .left-side {
-        width: 0%;
-    }
-    .right-side {
-        width: 100%;
-    }
+	.left-side {
+		width: 0%;
+	}
+
+	.right-side {
+		width: 100%;
+	}
+
 	.medium-mobile {
 		height: auto;
 	}
-    .item > p{
-        font-size:40px;
-    }
+
+	.item>p {
+		font-size: 40px;
+	}
+
 	.list-text {
 		font-size: 20px;
 	}
@@ -680,9 +685,8 @@ label {
 	}
 
 	.about {
-		line-height: 30px;
-		font-size: 22px;
-		margin-top: 5%;
+		font-size: 36px;
+		margin-top: 50%;
 	}
 
 	.font-bold {
@@ -700,6 +704,13 @@ label {
 
 	.App {
 		margin: 1% 5% 5% 5%;
+	}
+}
+
+@media (max-width:400px) {
+	.about {
+		font-size: 30px;
+		margin-top: 50%;
 	}
 }
 

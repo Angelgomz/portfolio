@@ -1,29 +1,29 @@
-import React from "react";
-import Sun from './../../assets/sun.svg';
-function About(props) {
+import React from "react"
+import Sun from './../../assets/sun.svg'
+function About() {
   return (
     <section className="flex justify-content-start flex-column">
     <div className="about"> 
            <h1 className="uppercase font-bold text-white"> 
-           <div className="d-inline"> S </div>
-           <div className="d-inline"> O </div>
-           <div className="d-inline"> F  </div>
-           <div className="d-inline"> T </div>
-           <div className="d-inline"> W </div>
-           <div className="d-inline"> A </div>  
-           <div className="d-inline"> R </div>
-           <div className="d-inline"> E </div>
-            <br></br>
+           <div className="d-inline">S</div>
+           <div className="d-inline">O</div>
+           <div className="d-inline">F</div>
+           <div className="d-inline">T</div>
+           <div className="d-inline">W</div>
+           <div className="d-inline">A</div>  
+           <div className="d-inline">R</div>
+           <div className="d-inline">E</div>
+           <br></br>
            <span className="ml-10 whitespace-nowrap"></span>
-           <div className="d-inline"> D </div>
-           <div className="d-inline"> E </div>
-           <div className="d-inline"> V </div>
-           <div className="d-inline"> E </div>
-           <div className="d-inline"> L </div>
-           <div className="d-inline"> O </div>
-           <div className="d-inline"> P </div>
-           <div className="d-inline"> E </div>
-           <div className="d-inline"> R </div>
+           <div className="d-inline">D</div>
+           <div className="d-inline">E</div>
+           <div className="d-inline">V</div>
+           <div className="d-inline">E</div>
+           <div className="d-inline">L</div>
+           <div className="d-inline">O</div>
+           <div className="d-inline">P</div>
+           <div className="d-inline">E</div>
+           <div className="d-inline">R</div>
          </h1>
       </div>
          <div className="flex justify-content-between align-items-between about-bottom">
@@ -42,17 +42,17 @@ function About(props) {
           <div className="flex flex-column align-items-end">
                 <div>
                 <div className="flex">
-                  <div className="flex"> 
-                  <p className="text-white title uppercase">Open to Work</p>
-                  <img src={Sun} alt="sun-gif" className="sun-gif"></img>
-                  </div>
+                    <div className="flex"> 
+                    <p className="text-white title uppercase">Open to Work</p>
+                    <img src={Sun} alt="sun-gif" className="sun-gif"/>
+                    </div>
                 </div>
                 <p className="text-white subtitle">Based to Chile</p>
                 </div>
           </div>
           </div>
     </section>
-  );
+  )
 }
 
 export {About}

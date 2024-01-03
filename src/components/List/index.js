@@ -7,13 +7,13 @@ function List() {
     {
       text: "Sudo.CL",
       description:
-        "I worked as semisenior fullstack developer, making projects from beginning in Laravel, maintenance of frontend applications (React, Vue, JS  ), database administration, build API's and webhooks. Involved in ecommerce projects (Shopify, Meli, BSale..).",
+        "I worked as semisenior fullstack developer, making projects from beginning in Laravel, maintenance of frontend applications, database administration, build API's and webhooks. Involved in ecommerce projects (Shopify, Meli, BSale..).",
       years: "feb 2022 - now",
     },
     {
       text: "Social Media Real Time Spa",
       description:
-        "Social Media Real Time Spa's worked as fullstack developer, making tasks and projects builded mostly PHP, JavaScript Libraries(Vue + JQuery + React)",
+        "Social Media Real Time Spa's worked as fullstack developer, making tasks and projects builded mostly PHP, JavaScript Libraries",
       years: "ene 2020 - feb 2022",
     },
     {
