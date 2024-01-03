@@ -8,7 +8,7 @@ function Skills({children }) {
     AOS.init();
   }, []);
   return ( 
-    <section>
+    <section className="medium-mobile">
         <div className="flex justify-content-between">
           <div className="left-side">
           <p className="text-white vertical-text" data-aos="flip-up">
